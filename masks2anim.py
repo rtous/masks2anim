@@ -73,6 +73,8 @@ def getContours(im):
     for i, color in enumerate(unique_colours):
         mask = cv2.inRange(im, color, color)
         area = cv2.countNonZero(mask)
+        #if the color covers more than the half of the pixels
+        #we asume that it's background
         if area > 200 and area < height*width/2: #avoid the frame contour
             #split color mask in N contours (with a minimum of area > 10)
             ret, thresh = cv2.threshold(mask, 127, 255, 0)

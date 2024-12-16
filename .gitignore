@@ -1,0 +1,11 @@
+.DS_Store
+/myvenv
+/models/shape_predictor_68_face_landmarks.dat
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+*.egg-info/

@@ -26,6 +26,8 @@ pip install dlib==19.24.6
 
 Download into models folder the model file of the dlib's HOG face detector (shape_predictor_68_face_landmarks.dat):
 ```
+mkdir models
+
 wget https://github.com/italojs/facial-landmarks-recognition/raw/refs/heads/master/shape_predictor_68_face_landmarks.dat -P models
 ```
 
